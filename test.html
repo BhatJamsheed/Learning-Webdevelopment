@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+<div id="navlist">
+    <a href="index.html"> <img src="Res/toplogo.png" alt="Logo" style="width:150px;height: 40px;"></a>
+    <a href="index.html">Home</a>
+    <a href="#">Our Products</a>
+    <a href="#">Images</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+
+
+    <div id="searchfield">
+        <input type="text" placeholder="Search Courses" name="search">
+    </div>
+    <div class="searchbutton">
+        <button>
+            <b>Search</b>
+        </button>
+    </div>
+
+
+
+    <div id="login">
+        <button>
+            <b>Login</b>
+        </button>
+    </div>
+    <div id="signup">
+        <button>
+            <b>Signup</b>
+        </button>
+    </div>
+
+</div>
+</div>
+<div id="Top"></div>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<div id="messege"
+    style="height: 130px;width: 100%; background-color: #7C9EB2;display: flex;justify-content: space-between;">
+    <div id="time" style="width:70%;"></div>
+    <div id="greeting" name="greeting" style="width:30%; position:relative;top: 110px; color: rgb(0, 0, 0);">
+    </div>
+</div>
+
+<script>
+    var date = new Date();
+    document.getElementById("time").innerHTML = "<br /><br /><br /><br /><br /><br />" + date;
+    var hr = date.getHours();
+    if (hr >= 6 && hr < 12) {
+        document.getElementById("greeting").innerHTML = "Good Morning";
+    } else if (hr >= 12 && hr <= 18) {
+        document.getElementById("greeting").innerHTML = "Good AfterNoon";
+    } else {
+        document.getElementById("greeting").innerHTML = "Good Evening";
+    }
+
+
+</script>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Practice website</title>
+</head>
+
+
+<body>
+
+    <style>
+        #slideshow {
+            position: relative;
+            left: 0%;
+            overflow: hidden;
+            height: 200px;
+            width: 728px;
+            margin: 0 auto;
+        }
+
+        /* Style each of the sides 
+    with a fixed width and height */
+
+        .slide {
+            float: left;
+            height: 300px;
+            width: 728px;
+        }
+
+        /* Add animation to the slides */
+
+        .slide-wrapper {
+
+            /* Calculate the total width on the
+      basis of number of slides */
+            width: calc(728px * 4);
+
+            /* Specify the animation with the
+      duration and speed */
+            animation: slide 20s ease infinite;
+        }
+
+        /* Set the background color
+    of each of the slides *
+     
+    .slide:nth-child(2) {
+        background: pink;
+    }
+     
+    .slide:nth-child(3) {
+        background: red;
+    }
+     
+    .slide:nth-child(4) {
+        background: yellow;
+    }
+     
+    /* Define the animation 
+    for the slideshow */
+
+        @keyframes slide {
+
+            /* Calculate the margin-left for 
+      each of the slides */
+            20% {
+                margin-left: 0px;
+            }
+
+            40% {
+                margin-left: calc(-728px * 1);
+            }
+
+            60% {
+                margin-left: calc(-728px * 2);
+            }
+
+            80% {
+                margin-left: calc(-728px * 3);
+            }
+        }
+    </style>
+
+    <!-- Define the slideshow container -->
+    <div id="slideshow">
+        <div class="slide-wrapper">
+
+            <!-- Define each of the slides
+         and write the content -->
+            <div class="slide">
+                <h1 class="slide-number">
+                    <img src="Res/Cryptography.jpg">
+                </h1>
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    <img src="Res/python.jpg">
+                </h1>
+            </div>
+            <div class="slide">
+                <img src="Res/webdev.png">
+            </div>
+            <div class="slide">
+                <h1 class="slide-number">
+                    This is a slide show
+                </h1>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div id="lists">
+        <ol id="ordl1">
+            <li>ABCD</li>
+            <li>EFGH</li>
+            <li>IJKL</li>
+            <li>MNOP</li>
+        </ol>
+        <ul class="unordl2">
+            <li>QRST</li>
+            <li>UVWX</li>
+            <li>YZAB</li>
+            <li>QWER</li>
+        </ul>
+        <dl class="defl1">
+            <dt>UOK</dt>
+            <dd> University Of Kashmir </dd>
+            <dt>WHO</dt>
+            <dd> World Health Organisation </dd>
+            <dt>Abc</dt>
+            <dd> skjdchskhshvjdhvdjfhvvh </dd>
+        </dl>
+    </div>
+
+</body>
+<hr>
+
+
+<footer>
+    <div class="footer">
+        <div class="footericons">
+            <ul>
+                <li><a href="https://www.facebook.com/share/N4eevRnJcDvwTb9j/?mibextid=WC7FNe" target="_self"><img
+                            src="Res/facebook.png" alt="Facebook"> </a></li>
+                <li><a href="https://www.instagram.com/bhat_junaid._._?igsh=MWJpcTkxcWR0bzQxdA%3D%3D&utm_source=qr"
+                        target="_self"><img src="Res/instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://x.com/bhatjunaid1231?s=21 target=" _self"><img src="Res/twitter.png" alt="X"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/jamsheed-mushtaq-9b4995194?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                        target="_self"><img src="Res/linkedin.png" alt="Linkedin"></a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <div class="copyright">
+        <p style="color: #95AAB6;">
+            2024 &copy Jamsheed
+        </p>
+    </div>
+</footer>
+<a href="#navlist" class="navlist" style="position: fixed;bottom: 0%;left: 0%;"><img
+        src="Res/system-regular-11-arrow-up.gif" style="border-radius: 50%;"></a>
+
+</html>
