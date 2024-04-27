@@ -21,15 +21,53 @@
     }
 }
 
-
-
-#navlist {
-    display: flex;
-    background-color: #011936;
+#bgdiv{
+    background: #465362;
+    height: 300%;
+    width:100%;
+}
+#bardiv{
+    background: rgba(0,0,0,4);
+    height: 30px;
+    width: 160px;
     position: fixed;
-    width: 100%;
+    justify-content: center;
+    top: 1%;
+    left: 44%;
+    transform: translate(-50%,-50%,);
+    display: flex;
+    padding: 5px;
+    border-radius: 35%;
+}
+#r,#y,#b,#g{
+    border-radius: 50%;
+    height: 90%;
+    width: 15%;
+    margin-left: 5px;
+    margin-right: 5px;
+
 }
 
+
+#r{
+    background-color: red;
+}
+#y{
+    background-color: yellow;
+}
+#b{
+    background-color: blue;
+}
+#g{
+    background-color: green;
+}
+#navlist {
+    display: flex;
+    display: flex;
+    background-color: #011936;
+    position: absolute;
+    width: 100%;
+}
 #navlist a {
     float: left;
     display: block;
