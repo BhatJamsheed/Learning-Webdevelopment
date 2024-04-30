@@ -8,15 +8,16 @@
     margin: 0 auto;
 
 }
-/*tablet */
-@media only screen  and (min-width:768px) and (max-width:1024px){
-    .container{
+/* Responsive adjustments for tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
         width: 90%;
     }
 }
-/*mobile */
-@media only screen and (max-width:767px){
-    .container{
+
+/* Responsive adjustments for mobile */
+@media only screen and (max-width: 767px) {
+    .container {
         width: 90%;
     }
 }
@@ -100,7 +101,7 @@
     position: absolute;
     right: 200px;
     top: 10px;
-    width: 10px;
+    width: auto;
     font: size 20px;
 }
 
@@ -422,3 +423,4 @@ ul li img{
 #icondiv div {
     margin: 0 10px; /* Adjust this value to set the space between images */
 }
+
